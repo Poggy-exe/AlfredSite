@@ -7,35 +7,243 @@
     <title>Commands | Alfred</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="Alfredlogo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
             <ul class="navbar">
                 <a href="index.html"><img src = "Alfredlogo.png" style="width: 56px; height: 50px;"></a>
-                <li><a href="commands.html">Commands</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="commands.html" style="color: #bdc8da">Commands</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="donate.html">Donate</a></li>
+                <li><a href="https://discord.com/oauth2/authorize?client_id=792743098165493800&permissions=1133584&scope=bot" target="_blank"><button class="navinvitebutton">Invite Alfred</button></a></li>
             </ul>
         </nav>
     </header>
 
-    <h1 class="commandstitle">Commands</h1>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <img class="commandstitleimg", src="wavebackground.png">
 
-    <footer class="footer">
+    <div class="commandstitle">
+        <h1>Some of the best commands you'll find in a discord bot!</h1>
+    </div>
+
+    <p class="commandsp">Here's the list of commands available for Alfred as of now, come back every week for new updates! 😀</p>
+
+    <a href="https://discord.com/oauth2/authorize?client_id=792743098165493800&permissions=1133584&scope=bot" target="_blank"><button class="invitebuttoncmd">Invite Alfred</button></a>
+    <a href="#commandsid"><button class="continuebutton">View Commands</button></a>
+
+    <div id="commandsid" style="bottom: 400px; position: relative"></div>
+    <h2 class="commandsheader" style="margin-bottom: 0px;">Commands</h2>
+
+    <ul class="cmdnav" style="z-index: 1; margin-bottom: 0px;">
+        <li onclick="clickFun()" id="funbtn" style="background-color: #ff867f;">Fun</li>
+        <li onclick="clickGames()" id="gamesbtn">Games</li>
+        <li onclick="clickAnimals()" id="animalsbtn">Animals</li>
+        <li onclick="clickEconomy()" id="economybtn">Economy</li>
+    </ul>
+    
+    <table class="funtable" id="funtableid" style="display: block; padding: 0;">
+        <thead style="border-radius: 5px;">
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+                <th>Usage</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align: center;">news</td>
+                <td style="text-align: center;">Random trending news with summary.</td>
+                <td style="text-align: center;">!news</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">meme</td>
+                <td style="text-align: center;">Funny random memes for entertainment.</td>
+                <td style="text-align: center;">!meme</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">fact</td>
+                <td style="text-align: center;">Random extremely interesting facts.</td>
+                <td style="text-align: center;">!fact</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">ask</td>
+                <td style="text-align: center;">Gives you an answer to pretty much all questions.</td>
+                <td style="text-align: center;">!ask (question)</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">solve</td>
+                <td style="text-align: center;">Solves any mathematical question.</td>
+                <td style="text-align: center;">!solve (question)</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">eightball</td>
+                <td style="text-align: center;">Want to see if you'll pass your next math test?</td>
+                <td style="text-align: center;">!eightball (question)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="gamestable" id="gamestableid" style="display: none; padding: 0;">
+        <thead style="border-radius: 5px;">
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+                <th>Usage</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align: center;">tictactoe</td>
+                <td style="text-align: center;">Play tictactoe with your friends!</td>
+                <td style="text-align: center;">!tictactoe (@someone)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="animalstable" id="animalstableid" style="display: none; padding: 0;">
+        <thead style="border-radius: 5px;">
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+                <th>Usage</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align: center;">panda</td>
+                <td style="text-align: center;">Cute pandas!</td>
+                <td style="text-align: center;">!panda</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">cat</td>
+                <td style="text-align: center;">Meoww</td>
+                <td style="text-align: center;">!cat</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">dog</td>
+                <td style="text-align: center;">Woof woof!</td>
+                <td style="text-align: center;">!dog</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">cute</td>
+                <td style="text-align: center;">Random cute things :D</td>
+                <td style="text-align: center;">!cute</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">duck</td>
+                <td style="text-align: center;">Quack!</td>
+                <td style="text-align: center;">!duck</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">fox</td>
+                <td style="text-align: center;">Random awesome foxes!</td>
+                <td style="text-align: center;">!fox</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">bird</td>
+                <td style="text-align: center;">Random birds!</td>
+                <td style="text-align: center;">!bird</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="animalstable" id="animalstableid" style="display: none; padding: 0;">
+        <thead style="border-radius: 5px;">
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+                <th>Usage</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align: center;">panda</td>
+                <td style="text-align: center;">Cute pandas!</td>
+                <td style="text-align: center;">!panda</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">cat</td>
+                <td style="text-align: center;">Meoww</td>
+                <td style="text-align: center;">!cat</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">dog</td>
+                <td style="text-align: center;">Woof woof!</td>
+                <td style="text-align: center;">!dog</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">cute</td>
+                <td style="text-align: center;">Random cute things :D</td>
+                <td style="text-align: center;">!cute</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">duck</td>
+                <td style="text-align: center;">Quack!</td>
+                <td style="text-align: center;">!duck</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">fox</td>
+                <td style="text-align: center;">Random awesome foxes!</td>
+                <td style="text-align: center;">!fox</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">bird</td>
+                <td style="text-align: center;">Random birds!</td>
+                <td style="text-align: center;">!bird</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="economytable" id="economytableid" style="display: none; padding: 0;">
+        <thead style="border-radius: 5px;">
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+                <th>Usage</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align: center;">beg</td>
+                <td style="text-align: center;">Beg for your tokens!</td>
+                <td style="text-align: center;">!beg</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">rob</td>
+                <td style="text-align: center;">Rob your friends and get more tokens.</td>
+                <td style="text-align: center;">!rob (@someone)</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">bankrob</td>
+                <td style="text-align: center;">Bankrob anyone!!</td>
+                <td style="text-align: center;">!bankrob (@someone)</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">gamble</td>
+                <td style="text-align: center;">Want to test your luck? Try this command out!</td>
+                <td style="text-align: center;">!gamble (number) or (all)</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">deposit</td>
+                <td style="text-align: center;">Deposit to your bank.</td>
+                <td style="text-align: center;">!deposit (number) or (all)</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">withdraw</td>
+                <td style="text-align: center;">Withdraw from your bank!</td>
+                <td style="text-align: center;">!withdraw (number) or (all)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <img src="Alfredwall.png" style='width: 100%;'>
+
+
+    <footer class="footer" style="padding: 0;">
         <a href="index.html"><img src="Alfredlogo.png" class="alfredfooter"></a>
         <h2>ALFRED</h2>
         <p>Copyright © 2021 Alfred</p>
@@ -46,3 +254,5 @@
         </ul>
     </footer>
 </body>
+
+<script src="index.js"></script>

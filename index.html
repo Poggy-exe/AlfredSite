@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Alfred</title>
+    <title>Alfred Discord Bot</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="Alfredlogo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <ul class="navbar">
+            <ul class="navbar" id="navbar">
                 <a href="index.html"><img src = "Alfredlogo.png" style="width: 56px; height: 50px;"></a>
+                <li><a href="index.html" style="color: #bdc8da;">Home</a></li>
                 <li><a href="commands.html">Commands</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="donate.html">Donate</a></li>
+                <li><a href="https://discord.com/oauth2/authorize?client_id=792743098165493800&permissions=1133584&scope=bot" target="_blank"><button class="navinvitebutton">Invite Alfred</button></a></li>
             </ul>
         </nav>
     </header>
@@ -23,10 +27,11 @@
     <br>
     <div class="maintitle">
         <h1 class="alfredtitle">ALFRED</h1>
-        <h3 class="alfredinfo">A multipurpose bot with all kinds of features and your discord servers best friend :)</h3>
+        <h3 class="alfredinfo">A multipurpose bot with all kinds of features and your discord server's best friend :)</h3>
         <br>
         <br>
-        <a href="https://discord.com/oauth2/authorize?client_id=792743098165493800&permissions=1133584&scope=bot" target="_blank"><button class="invitebutton"><strong>INVITE ALFRED</strong></button></a>
+        <a href="https://discord.com/oauth2/authorize?client_id=792743098165493800&permissions=1133584&scope=bot" target="_blank"><button class="invitebutton">Invite Alfred</button></a>
+        <a href="https://discord.com/invite/rT5psq3pYZ" target="_blank"><button class="serverbutton">Need Support?</button></a>
     </div>
     <br>
     <br>
@@ -39,23 +44,37 @@
     <br>
     <h2 class="alfredthing">What does Alfred offer?</h2>
     <section class="threesections">
-        <div>
-            <h3>Economy</h3>
-            <p>Alfred has an economy system that is extremely simple but yet awesome! Use your tokens to get addicted to our gambling system, rob your friends to gain more tokens! Beg to gain tokens and earn more with those. We are planning on releasing a lot more updates 
-                for Alfred's economy so stay tuned!
-            </p>
+        <div class="economysection">
+            <div class="economytext">
+                <h3>Economy</h3>
+                <p>Alfred has an economy system that is extremely simple but yet awesome! Use your tokens to get addicted to our gambling system, rob your friends to gain more tokens! Beg to gain tokens and earn more with those. We are planning on releasing a lot more updates 
+                    for Alfred's economy so stay tuned!
+                </p>
+                <img class="economyimg" src="economyexample.png">
+                <img src="moneysign.png" class="ecomoneyimg">
+            </div>
         </div>
-        <div>
-            <h3>Fun</h3>
-            <p>We have an extremely aswesome wide array of fun commands, from memes to news to eightball you can 
-                use Alfred and you won't realize how fast time passes! Our funny memes will hook you for hours and our extremely hot news will surprise the hell out of you. Since we are still  in Beta stages you can expect a lot more to come.
-            </p>
+
+        <div class="funsection">
+            <div class="funtext">
+                <h3>Fun</h3>
+                <p>We have an extremely awesome wide array of fun commands, from memes to news to eightball you can 
+                    use Alfred and you won't realize how fast time passes! Our funny memes will hook you for hours and our extremely hot news will surprise the hell out of you. Since we are still  in Beta stages you can expect a lot more to come.
+                </p>
+                <img class="funimg" src="funexample.png">
+                <img src="funsign.png" class="funsignimg">
+            </div>
         </div>
-        <div>
-            <h3>Games</h3>
-            <p>While our command list isn't stacked with games right now, Alfred will soon have plenty of games for you and your 
-                community to enjoy, they include but not limit to tic tac toe, connect4 and many other games. Just like the other sections we shall keep updating and improving to give you the best experience.
-            </p>
+        
+        <div class="gamessection">
+            <div class="gamestext">
+                <h3>Games</h3>
+                <p>While our command list isn't stacked with games right now, Alfred will soon have plenty of games for you and your 
+                    community to enjoy, they include but not limit to tic tac toe, connect4 and many other games. Just like the other sections we shall keep updating and improving to give you the best experience.
+                </p>
+                <img class="gamesimg" src="gamesexample.png">
+                <img src="gamessign.png" class="gamessignimg">
+            </div>
         </div>
     </section>
 
@@ -72,3 +91,6 @@
 
 </body>
 </html>
+
+
+<script src="index.js"></script>
